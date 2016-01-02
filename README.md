@@ -1,2 +1,2 @@
-# router-js
-A simple router in pure javascript for javascript with protypage
+# RouterJS
+A simple javascript router written in pure javascript and prototypes
