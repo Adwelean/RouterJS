@@ -13,7 +13,7 @@ var App = function(debugMode)
 App.prototype = {
   init: function()
   {
-    // Initialize router, the route params is defined in php files
+    // Initialize the router, the route param is defined in php files
     this.routerModule.init(route);
     // Register main module for all routes
     this.routerModule.defaultRegisteredModule([this.mainModule]);
