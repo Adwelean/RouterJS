@@ -27,6 +27,11 @@ App.prototype = {
 
     window.app = this;
   },
+  log: function(msg)
+  {
+    if(this.debugMode)
+      console.log(msg);
+  },
   get MainModule()
   {
     return this.mainModule;
