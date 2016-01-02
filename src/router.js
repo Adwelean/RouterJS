@@ -1,8 +1,7 @@
 /**
  * Created by Quentin JOSEPH on 01/01/2016.
  */
-Router = function(app) {
-    this.app = app;
+Router = function() {
     this.currentRoute = "";
     this.defaultModules = [];
     this.registeredRoutes = [];
