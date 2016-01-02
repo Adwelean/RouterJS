@@ -1,6 +1,3 @@
-/**
- * Created by Quentin JOSEPH on 29/12/2015.
- */
 // Constructor:
 App.EditorModule = function(app) {
     this.app = app;

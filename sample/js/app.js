@@ -1,3 +1,4 @@
+// Constructor:
 var App = function(debugMode)
 {
   this.debugMode = debugMode;
@@ -8,15 +9,20 @@ var App = function(debugMode)
   this.editorModule = new App.EditorModule(this);
 };
 
+// Methods:
 App.prototype = {
   init: function()
   {
-    // route is defined in php files
+    // Initialize router, the route params is defined in php files
     this.routerModule.init(route);
+    // Register main module for all routes
     this.routerModule.defaultRegisteredModule([this.mainModule]);
+    // Register these routes to the router
     this.routerModule.register("home");
     this.routerModule.register("presentation");
-    this.routerModule.register("articles", [this.editorModule]);
+    // Add the editor module in addition to the main module already registred
+    this.routerModule.register("articles", [this.editorModule]); 
+    // Load modules for the current route
     this.routerModule.apply();
 
     window.app = this;

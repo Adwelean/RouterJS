@@ -1,12 +1,11 @@
-/**
- * Created by Quentin JOSEPH on 01/01/2016.
- */
+// Constructor:
 Router = function() {
     this.currentRoute = "";
     this.defaultModules = [];
     this.registeredRoutes = [];
 };
 
+// Methods:
 Router.prototype =
 {
     init: function (route) {

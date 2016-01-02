@@ -1,4 +1,4 @@
-<h1>It's Presentation page !</h1>
+<h2>It's Presentation page !</h2>
 
 <script>
 	var route = "<?php echo 'presentation' ?>";

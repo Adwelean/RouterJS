@@ -1,6 +1,3 @@
-/**
- * Created by Quentin JOSEPH on 02/01/2016.
- */
 // Constructor:
 App.MainModule = function(app) {
     this.app = app;
